@@ -1,0 +1,45 @@
+-----------------------------------------------------------
+Server listening on 5202 (test #1)
+-----------------------------------------------------------
+Accepted connection from 127.0.0.1, port 47562
+[  5] local 127.0.0.1 port 5202 connected to 127.0.0.1 port 47570
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec   742 MBytes  6.22 Gbits/sec                  
+[  5]   1.00-2.00   sec   814 MBytes  6.82 Gbits/sec                  
+[  5]   2.00-3.00   sec   809 MBytes  6.78 Gbits/sec                  
+[  5]   3.00-4.00   sec   798 MBytes  6.70 Gbits/sec                  
+[  5]   4.00-5.00   sec   806 MBytes  6.76 Gbits/sec                  
+[  5]   5.00-6.00   sec   737 MBytes  6.18 Gbits/sec                  
+[  5]   6.00-7.00   sec   790 MBytes  6.63 Gbits/sec                  
+[  5]   7.00-8.00   sec   805 MBytes  6.75 Gbits/sec                  
+[  5]   8.00-9.00   sec   796 MBytes  6.68 Gbits/sec                  
+[  5]   9.00-10.00  sec   816 MBytes  6.85 Gbits/sec                  
+[  5]  10.00-10.00  sec  1.12 MBytes  3.91 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.00  sec  7.78 GBytes  6.68 Gbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5202 (test #2)
+-----------------------------------------------------------
+
+group5@Pi5-yi:~ $ iperf3 -c 192.168.1.105 -p 5202
+iperf3: error - unable to connect to server - server may have stopped running or use a different port, firewall issue, etc.: Connection refused
+group5@Pi5-yi:~ $ iperf3 -c 127.0.0.1 -p 5202
+Connecting to host 127.0.0.1, port 5202
+[  5] local 127.0.0.1 port 47570 connected to 127.0.0.1 port 5202
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   744 MBytes  6.23 Gbits/sec    0   1.12 MBytes       
+[  5]   1.00-2.00   sec   812 MBytes  6.81 Gbits/sec    0   1.12 MBytes       
+[  5]   2.00-3.00   sec   813 MBytes  6.82 Gbits/sec    0   1.12 MBytes       
+[  5]   3.00-4.00   sec   797 MBytes  6.69 Gbits/sec    0   1.12 MBytes       
+[  5]   4.00-5.00   sec   802 MBytes  6.73 Gbits/sec    0   1.12 MBytes       
+[  5]   5.00-6.00   sec   742 MBytes  6.22 Gbits/sec    0   1.12 MBytes       
+[  5]   6.00-7.00   sec   804 MBytes  6.74 Gbits/sec    0   1.12 MBytes       
+[  5]   7.00-8.00   sec   814 MBytes  6.83 Gbits/sec    0   1.12 MBytes       
+[  5]   8.00-9.00   sec   809 MBytes  6.79 Gbits/sec    0   1.12 MBytes       
+[  5]   9.00-10.00  sec   818 MBytes  6.85 Gbits/sec    0   1.12 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  7.78 GBytes  6.68 Gbits/sec    0            sender
+[  5]   0.00-10.00  sec  7.78 GBytes  6.68 Gbits/sec                  receiver
+

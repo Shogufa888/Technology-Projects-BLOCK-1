@@ -1,0 +1,49 @@
+group5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ nano task5.py
+Ogroup5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ stress --cpu 4 --timeout 30
+bash: stress: command not found
+group5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ sudp apt install stress -y
+bash: sudp: command not found
+group5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ sudo apt install stress -y
+Installing:                     
+  stress
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 151
+  Download size: 21.8 kB
+  Space needed: 99.3 kB / 7,753 MB available
+
+Get:1 http://deb.debian.org/debian trixie/main arm64 stress arm64 1.0.7-1+b1 [21.8 kB]
+Fetched 21.8 kB in 0s (467 kB/s)
+Selecting previously unselected package stress.
+(Reading database ... 121293 files and directories currently installed.)
+Preparing to unpack .../stress_1.0.7-1+b1_arm64.deb ...
+Unpacking stress (1.0.7-1+b1) ...
+Setting up stress (1.0.7-1+b1) ...
+Processing triggers for man-db (2.13.1-1) ...
+
+
+
+
+
+
+
+
+
+group5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ stress --cpu 4 --timeout 30
+stress: info: [2736] dispatching hogs: 4 cpu, 0 io, 0 vm, 0 hdd
+stress: info: [2736] successful run completed in 30s
+group5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ nano Thermal.txt
+group5@Pi5-yi:~/shogufa/Technology-Projects-Block-1/1.4_benchmarking $ 
+
+
+
+
+
+
+
+
+
+Every 2.0s: vcgencmd measure_temp               Pi5-yi: Fri Oct 23 11:52:40 2026
+
+temp=50.6'C
+
